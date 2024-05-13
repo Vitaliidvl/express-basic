@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><%= pageTitle%></title>
-</head>
-<body>
+<%- include('includes/head.ejs') %>
   <a href="/">home</a>
   <h1>users page</h1>
  <% if (users.length > 0) { %>
@@ -17,5 +10,4 @@
 <% } else { %>
   <h1>No Users Found!</h1>
 <% } %>
-</body>
-</html>
+<%- include('includes/end.ejs') %>
